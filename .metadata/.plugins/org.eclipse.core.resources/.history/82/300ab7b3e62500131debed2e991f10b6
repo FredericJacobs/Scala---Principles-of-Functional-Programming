@@ -1,0 +1,64 @@
+package recfun
+import common._
+
+object Main {
+  def main(args: Array[String]) { 
+    println("Pascal's Triangle")
+    for (row <- 0 to 10) {
+      for (col <- 0 to row)
+        print(pascal(col, row) + " ")
+      println()
+    }
+  }
+
+  /**
+   * Exercise 1
+   */
+  def pascal(c: Int, r: Int): Int = {
+    // By definition of the pascal triangle, first column is 1 and so is the diagonal
+    if (c == r || c == 0) 1
+    // We know that each number is obtained by adding up the two numbers above.
+    else pascal(c - 1, r - 1) + pascal(c, r - 1)
+  }
+
+  /**
+   * Exercise 2
+   */
+  def balance(chars: List[Char]): Boolean = {
+    // We need a stack to keep track of the opened parentheses and hence declare a sub-function to keep track of it.
+    def isBalanced(chars: List[Char], stack: String): Boolean = {
+      
+      println(stack);
+      // if the character stack is empty, our stack needs to be empty too if we want to have a balanced expression
+      if (chars.isEmpty) stack.isEmpty
+      // if the leading char is a '(' we add it to the stack. And we then call the isBalanced function with the new char list (without the '(' we just added to the stack) and the new stack. 
+      else if (chars.head == '(') isBalanced(chars.tail, chars.head + stack)
+      // same as above except that we pop out any opened parentheses from the stack instead of adding it and we manage the case where the stack would be empty (unbalanced expression).
+      else if (chars.head == ')')  !(stack.isEmpty) && isBalanced(chars.tail, stack.tail)
+      // if the leading character of the list is neither '(' nor ')', we call the isBalanced function with the list of characters without the first one (that's what the tail function does). 
+      else isBalanced(chars.tail, stack)
+    }
+    isBalanced(chars, "");
+  }
+
+  /**
+   * Exercise 3
+   */
+  def countChange(money: Int, coins: List[Int]): Int = {
+    // We want to define countChange recursively but we want to use a substraction to find the matching options. Because there is possible way to pay 0 CHF in coins, we have to bring out that option.
+    def insideCountChange(money: Int, coins: List[Int]): Int = {
+      // The count is correct! Add it to the solutions list.
+      if(money == 0) 1
+      // That option gives too much money back!
+      else if (money < 0) 0
+      // No more coins, we did all the options.
+      else if (coins.isEmpty) 0
+      else {
+        // Let's try to loop through the possible combinations.
+        insideCountChange(money - coins.head, coins) + insideCountChange(money, coins.tail)
+      }
+    }
+    if (money == 0) 0
+    else insideCountChange(money, coins)
+  }
+}
