@@ -77,6 +77,11 @@ class FunSetSuite extends FunSuite {
     val s1 = singletonSet(1)
     val s2 = singletonSet(2)
     val s3 = singletonSet(3)
+    val s4 = Set(1,3,4,5,7,1000)
+    val s5 = Set(1,2,3,4)
+    val s6 = Set(5,7,1000)
+    val difference = diff(s4,s5)
+    val negative = (x:Int) => (x<0)
   }
 
   /**
@@ -98,6 +103,12 @@ class FunSetSuite extends FunSuite {
        * the test fails. This helps identifying which assertion failed.
        */
       assert(contains(s1, 1), "Singleton")
+    }
+  }
+  
+  test("diff of {1,3,4,5,7,1000} and {1,2,3,4}"){
+    new TestSets{
+      assert(diff(s4,s5) ===s6)
     }
   }
 
