@@ -84,9 +84,6 @@ abstract class TweetSet {
    * Question: Should we implement this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  
-  // Yes it can!
-  
   def descendingByRetweet: TweetList = {
     new Cons(mostRetweeted, remove(mostRetweeted).descendingByRetweet)
   }

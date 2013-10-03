@@ -84,9 +84,6 @@ abstract class TweetSet {
    * Question: Should we implement this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  
-  // Yes it can!
-  
   def descendingByRetweet: TweetList = {
     new Cons(mostRetweeted, remove(mostRetweeted).descendingByRetweet)
   }
@@ -146,8 +143,6 @@ class Empty extends TweetSet {
   def remove(tweet: Tweet): TweetSet = this
 
   def foreach(f: Tweet => Unit): Unit = ()
-  
-  override def descendingByRetweet: TweetList = Nil
   
   override def isEmpty: Boolean = true
 }
