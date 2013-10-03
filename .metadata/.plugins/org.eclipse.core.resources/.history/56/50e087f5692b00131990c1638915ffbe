@@ -1,0 +1,15 @@
+object WorkSheet {
+  println("Welcome to the Scala worksheet")
+
+	def repeated(n:Int, f:Int => Int): Int => Int = {
+		x:Int => if(n==0) x else repeated(n-1, f)(f(x));
+	}
+	
+	def compose(f:Int => Int, g: Int => Int): Int => Int = {
+	}
+	
+	def repeated2(n:Int, f:Int => Int): Int => Int = {
+	
+	}
+		
+}

@@ -1,0 +1,5 @@
+object WorkSheet {
+  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+	def repeated(n:Int, f:Int => Int):Int => Int = 
+	 
+}
