@@ -13,14 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="descending" key="selection"/>
+		<item value="java" key="selection"/>
 		<list key="findhistory">
+			<item value="java"/>
+			<item value="throw"/>
+			<item value="&quot;No such character&quot;"/>
+			<item value="minRetweet"/>
 			<item value="descending"/>
 			<item value="isEmpty"/>
 			<item value="Nil"/>
 			<item value="&lt;"/>
-			<item value="y"/>
-			<item value="bound"/>
 		</list>
 		<list key="replacehistory">
 		</list>

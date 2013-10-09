@@ -1,9 +1,0 @@
-object WorkSheet {
-  println("Welcome to the Scala worksheet")
-
-	def repeated(n:Int, f:Int => Int):(Int) => Int = {
-		if(n==1) f
-		else f(repeated(n-1, f));
-	}
-
-}

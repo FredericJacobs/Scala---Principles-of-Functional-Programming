@@ -35,6 +35,9 @@ class Tweet(val user: String, val text: String, val retweets: Int) {
  */
 abstract class TweetSet {
 
+  def sumTweets:Int = combine(0)((x,y,z) => x+y+z)
+  
+  def combine(z:Int)(f:(Int,Int,Int) => Int):Int;
   /**
    * This method takes a predicate and returns a subset of all the elements
    * in the original set for which the predicate is true.
@@ -135,6 +138,8 @@ class Empty extends TweetSet {
    * The following methods are already implemented
    */
   
+  def combine(z:Int)(f:(Int,Int,Int) => Int):Int = z
+  
   override def union(that: TweetSet): TweetSet = that
 
   override def mostRetweeted: Tweet = throw new java.util.NoSuchElementException;
@@ -154,6 +159,12 @@ class Empty extends TweetSet {
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
 
+  def combine(z:Int)(f:(Int,Int,Int) => Int):Int = {
+    val a = left.combine(z)(f)
+    val b = right.combine(z)(f)
+    f(a,b, elem.retweets)
+  }
+  
   override def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
 		if(p(elem))
 		  left.filterAcc(p, right.filterAcc(p, acc.incl(elem)))

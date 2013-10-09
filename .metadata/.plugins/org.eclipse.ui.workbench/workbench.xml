@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="1024" maximized="true" width="1640" x="0" y="22">
+<window height="874" maximized="true" width="1457" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -148,7 +148,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="explorer"/>
 <info folder="true" part="problems" ratio="0.7254902" ratioLeft="962" ratioRight="364" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -191,14 +191,23 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetData.scala" tooltip="progfun-objsets/src/main/scala/objsets/TweetData.scala">
-<persistable path="/progfun-objsets/src/main/scala/objsets/TweetData.scala"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="HuffmanSuite.scala" tooltip="progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala">
+<persistable path="/progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Huffman.scala" tooltip="progfun-patmat/src/main/scala/patmat/Huffman.scala">
+<persistable path="/progfun-patmat/src/main/scala/patmat/Huffman.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetSet.scala" tooltip="progfun-objsets/src/main/scala/objsets/TweetSet.scala">
+<persistable path="/progfun-objsets/src/main/scala/objsets/TweetSet.scala"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetReader.scala" tooltip="progfun-objsets/src/main/scala/objsets/TweetReader.scala">
 <persistable path="/progfun-objsets/src/main/scala/objsets/TweetReader.scala"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetSet.scala" tooltip="progfun-objsets/src/main/scala/objsets/TweetSet.scala">
-<persistable path="/progfun-objsets/src/main/scala/objsets/TweetSet.scala"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetData.scala" tooltip="progfun-objsets/src/main/scala/objsets/TweetData.scala">
+<persistable path="/progfun-objsets/src/main/scala/objsets/TweetData.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="package.scala" tooltip="progfun-patmat/src/main/scala/common/package.scala">
+<persistable path="/progfun-patmat/src/main/scala/common/package.scala"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TweetSetSuite.scala" tooltip="progfun-objsets/src/test/scala/objsets/TweetSetSuite.scala">
 <persistable path="/progfun-objsets/src/test/scala/objsets/TweetSetSuite.scala"/>
@@ -226,12 +235,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="ListsSuite.scala" tooltip="progfun-example/src/test/scala/example/ListsSuite.scala">
 <persistable path="/progfun-example/src/test/scala/example/ListsSuite.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" tooltip="progfun-example/src/main/scala/example/Main.scala">
-<persistable path="/progfun-example/src/main/scala/example/Main.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="package.scala" tooltip="progfun-example/src/main/scala/common/package.scala">
-<persistable path="/progfun-example/src/main/scala/common/package.scala"/>
 </file>
 </mruList>
 </workbench>
