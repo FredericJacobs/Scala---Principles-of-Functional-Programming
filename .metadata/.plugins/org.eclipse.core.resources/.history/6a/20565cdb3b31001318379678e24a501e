@@ -97,9 +97,12 @@ object Huffman {
    */
   
   def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
-	  freqs.sortWith(_._2 < _._2).map(f => Leaf(f._1, f._2))
+    def makeOrderedLeafAcc(acc: List[Leaf], sub: List[(Char, Int)]): List[Leaf] = sub match {
+      case Nil		=> acc
+      case x :: xs 	=> makeOrderedLeafAcc(acc :+ Leaf(x._1, x._2), xs)
+    }
+    makeAcc(List(), freqs.sortWith((a, b) => a._2 < b._2))
   }
-  
   /**
    * Checks whether the list `trees` contains only one single code tree.
    */
@@ -118,11 +121,10 @@ object Huffman {
    * unchanged.
    */
   def combine(trees: List[CodeTree]): List[CodeTree] = trees match {
-    case Nil 					=> trees
-    case first::Nil 			=> trees
-    case first::second::rest 	=> makeCodeTree(first, second) :: rest sortWith((first, second) => weight(first) < weight(second))
+    case Nil => trees
+    case first :: Nil => trees
+    case first::second::rest => makeCodeTree(first, second) :: rest
   }
-  
   /**
    * This function will be called in the following way:
    *

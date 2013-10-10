@@ -120,7 +120,7 @@ object Huffman {
   def combine(trees: List[CodeTree]): List[CodeTree] = trees match {
     case Nil 					=> trees
     case first::Nil 			=> trees
-    case first::second::rest 	=> makeCodeTree(first, second) :: rest sortWith((first, second) => weight(first) < weight(second))
+    case first::second::rest 	=> makeCodeTree(first, second) :: rest sortWith((first, second) => weight(t1) < weight(t2))
   }
   
   /**
