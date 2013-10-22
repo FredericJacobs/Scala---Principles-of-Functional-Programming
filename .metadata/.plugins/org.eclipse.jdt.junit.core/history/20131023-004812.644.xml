@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="progfun-forcomp" project="progfun-forcomp" tests="11" started="11" failures="0" errors="1" ignored="0">
+  <testsuite name="forcomp.AnagramsSuite" time="0.963">
+    <testcase name="wordOccurrences: abcd" classname="forcomp.AnagramsSuite" time="0.047"/>
+    <testcase name="wordOccurrences: Robert" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="sentenceOccurrences: abcd e" classname="forcomp.AnagramsSuite" time="0.001"/>
+    <testcase name="dictionaryByOccurrences.get: eat" classname="forcomp.AnagramsSuite" time="0.877"/>
+    <testcase name="word anagrams: married" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="word anagrams: player" classname="forcomp.AnagramsSuite" time="0.001"/>
+    <testcase name="subtract: lard - r" classname="forcomp.AnagramsSuite" time="0.003"/>
+    <testcase name="combinations: []" classname="forcomp.AnagramsSuite" time="0.001"/>
+    <testcase name="combinations: abba" classname="forcomp.AnagramsSuite" time="0.003"/>
+    <testcase name="sentence anagrams: []" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="sentence anagrams: Linux rulez" classname="forcomp.AnagramsSuite" time="0.03">
+      <error>java.util.NoSuchElementException: key not found: List()
+	at scala.collection.MapLike$class.default(MapLike.scala:228)
+	at scala.collection.AbstractMap.default(Map.scala:58)
+	at scala.collection.MapLike$class.apply(MapLike.scala:141)
+	at scala.collection.AbstractMap.apply(Map.scala:58)
+	at forcomp.Anagrams$$anonfun$forcomp$Anagrams$$sentenceAnagrams0$1$1.apply(Anagrams.scala:159)
+	at forcomp.Anagrams$$anonfun$forcomp$Anagrams$$sentenceAnagrams0$1$1.apply(Anagrams.scala:158)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:251)
+	at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:251)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:251)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:105)
+	at forcomp.Anagrams$.forcomp$Anagrams$$sentenceAnagrams0$1(Anagrams.scala:158)
+	at forcomp.Anagrams$.sentenceAnagrams(Anagrams.scala:163)
+	at forcomp.AnagramsSuite$$anonfun$11.apply$mcV$sp(AnagramsSuite.scala:105)
+	at forcomp.AnagramsSuite$$anonfun$11.apply(AnagramsSuite.scala:81)
+	at forcomp.AnagramsSuite$$anonfun$11.apply(AnagramsSuite.scala:81)
+	at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+	at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+	at forcomp.AnagramsSuite.withFixture(AnagramsSuite.scala:11)
+	at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+	at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+	at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:198)
+	at org.scalatest.FunSuite$class.runTest(FunSuite.scala:1271)
+	at forcomp.AnagramsSuite.runTest(AnagramsSuite.scala:11)
+	at org.scalatest.FunSuite$$anonfun$runTests$1.apply(FunSuite.scala:1304)
+	at org.scalatest.FunSuite$$anonfun$runTests$1.apply(FunSuite.scala:1304)
+	at org.scalatest.SuperEngine$$anonfun$org$scalatest$SuperEngine$$runTestsInBranch$1.apply(Engine.scala:260)
+	at org.scalatest.SuperEngine$$anonfun$org$scalatest$SuperEngine$$runTestsInBranch$1.apply(Engine.scala:249)
+	at scala.collection.immutable.List.foreach(List.scala:318)
+	at org.scalatest.SuperEngine.org$scalatest$SuperEngine$$runTestsInBranch(Engine.scala:249)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:326)
+	at org.scalatest.FunSuite$class.runTests(FunSuite.scala:1304)
+	at forcomp.AnagramsSuite.runTests(AnagramsSuite.scala:11)
+	at org.scalatest.Suite$class.run(Suite.scala:2303)
+	at forcomp.AnagramsSuite.org$scalatest$FunSuite$$super$run(AnagramsSuite.scala:11)
+	at org.scalatest.FunSuite$$anonfun$run$1.apply(FunSuite.scala:1310)
+	at org.scalatest.FunSuite$$anonfun$run$1.apply(FunSuite.scala:1310)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:362)
+	at org.scalatest.FunSuite$class.run(FunSuite.scala:1310)
+	at forcomp.AnagramsSuite.run(AnagramsSuite.scala:11)
+	at org.scalatest.junit.JUnitRunner.run(JUnitRunner.scala:94)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

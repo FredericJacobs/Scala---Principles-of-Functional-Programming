@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="progfun-forcomp" project="progfun-forcomp" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="forcomp.AnagramsSuite" time="1.107">
+    <testcase name="wordOccurrences: abcd" classname="forcomp.AnagramsSuite" time="0.049"/>
+    <testcase name="wordOccurrences: Robert" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="sentenceOccurrences: abcd e" classname="forcomp.AnagramsSuite" time="0.001"/>
+    <testcase name="dictionaryByOccurrences.get: eat" classname="forcomp.AnagramsSuite" time="0.852"/>
+    <testcase name="word anagrams: married" classname="forcomp.AnagramsSuite" time="0.001"/>
+    <testcase name="word anagrams: player" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="subtract: lard - r" classname="forcomp.AnagramsSuite" time="0.004"/>
+    <testcase name="combinations: []" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="combinations: abba" classname="forcomp.AnagramsSuite" time="0.004"/>
+    <testcase name="sentence anagrams: []" classname="forcomp.AnagramsSuite" time="0.0"/>
+    <testcase name="sentence anagrams: Linux rulez" classname="forcomp.AnagramsSuite" time="0.196"/>
+  </testsuite>
+</testrun>
