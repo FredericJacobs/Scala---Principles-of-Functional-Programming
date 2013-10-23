@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="874" maximized="true" width="1457" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -10,7 +10,7 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
 <coolItem id="org.scala-ide.sdt.core.toolbar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.scalaide.worksheet.editors.ScriptEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,16 +29,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" partName="Anagrams.scala" path="/Users/fred/Developer/Scala-Homework/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala" title="Anagrams.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/Anagrams.scala" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-<editorState selectionHorizontalPixel="131" selectionLength="0" selectionOffset="4156" selectionTopPixel="1314"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -96,7 +90,7 @@
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.junit.ResultView" activePerspective="org.scala-ide.sdt.core.perspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.scala-ide.sdt.core.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="scala.tools.eclipse.PerspectiveFactory" id="org.scala-ide.sdt.core.perspective" label="Scala"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -183,20 +177,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-</editors>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3365" y="0"/>
-</item>
-<item active="true" historyLabel="Anagrams.scala" index="0">
-<position info="not_deleted" x="3444" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -213,11 +194,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/Anagrams.scala">
-<persistable path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="AnagramsSuite.scala" tooltip="progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala">
 <persistable path="/progfun-forcomp/src/test/scala/forcomp/AnagramsSuite.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Main.scala" tooltip="progfun-recfun/src/main/scala/recfun/Main.scala">
+<persistable path="/progfun-recfun/src/main/scala/recfun/Main.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Anagrams.scala" tooltip="progfun-forcomp/src/main/scala/forcomp/Anagrams.scala">
+<persistable path="/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="HuffmanSuite.scala" tooltip="progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala">
 <persistable path="/progfun-patmat/src/test/scala/patmat/HuffmanSuite.scala"/>
@@ -254,9 +238,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="CountChangeSuite.scala" tooltip="progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala">
 <persistable path="/progfun-recfun/src/test/scala/recfun/CountChangeSuite.scala"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="BalanceSuite.scala" tooltip="progfun-recfun/src/test/scala/recfun/BalanceSuite.scala">
-<persistable path="/progfun-recfun/src/test/scala/recfun/BalanceSuite.scala"/>
 </file>
 </mruList>
 </workbench>
