@@ -1,0 +1,4 @@
+object Multiplesof3And5 {
+  val numbers = 1 to 10 toList
+	val divisibleby3or5 = numbers.filter(x => x % 3 == 0 || x % 5 ==0)
+}

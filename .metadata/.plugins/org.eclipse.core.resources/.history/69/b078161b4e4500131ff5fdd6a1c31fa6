@@ -1,0 +1,10 @@
+object PlayWithScala {
+  println("Welcome to the Scala worksheet")
+  val numbers = List(1,2,3)
+  numbers.reverse
+  
+  type Occurences = List[(Char, Int)]
+  type Word = String
+  def wordsOccurences(w: Word): List[Any] = w.toList.groupBy(x => x.toLower).map(_ match {case (letter,matchedLetters) => (letter, matchedLetters.length)}).toList
+  wordsOccurences("HELLO WORLD")
+}

@@ -47,8 +47,8 @@ object Lists {
       def max_inner(xt: List[Int]): Int = {
         if (xt.isEmpty){0}
         else {
-          if (xt.head >= max_inner(xt.tail)){xt.head}
-          else {max_inner(xt.tail)} 
+          if (xt.head >= max_inner(xt.tail)) xt.head
+          else max_inner(xt.tail)
         } 
       }
       max_inner(xs);

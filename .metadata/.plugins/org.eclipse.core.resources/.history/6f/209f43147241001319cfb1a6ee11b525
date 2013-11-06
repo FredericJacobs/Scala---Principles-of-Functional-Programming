@@ -1,0 +1,8 @@
+object prgAdvanced {
+  type Students = List[String];
+  type Hate = List[(String, String)];
+  
+  def bar(sits: Students, stands: Students, hate: Hate): List[Students]{
+  	def canSit(s1: Student, s2: Student, hate:Hate):Boolean = !(hate.contain((s1,s2))
+  }
+}

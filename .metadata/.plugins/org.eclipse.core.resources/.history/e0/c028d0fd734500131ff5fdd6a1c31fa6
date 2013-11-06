@@ -1,0 +1,4 @@
+object Multiplesof3And5 {
+  val numbers = 1 to 10 toList
+	numbers.filter
+}
