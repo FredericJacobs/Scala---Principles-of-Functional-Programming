@@ -1,4 +1,0 @@
-object Multiplesof3And5 {
-  List                                            //> res0: scala.collection.immutable.List.type = scala.collection.immutable.List$
-                                                  //| @2c641e9a
-}
